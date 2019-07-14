@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+    body{background-color: #333}
+    #paper{width: 872px;
+    height: 600px;
+    border: 20px solid white;
+    background-color: #111;
+    position: relative;
+    perspective: 1000px}
+    #paper .seg{width:200px;
+    height:600px;
+    position:absolute;
+    top:0;
+    background-image: url(foto.jpg)}
+    #paper .seg:nth-child(2){left: 175px;
+    background-position: -200px 0;
+    transform:scale(1.05)rotateY(-30deg)}
+    #paper .seg:nth-child(3){left: 350px;
+    background-position: -400px 0;
+    transform:scale(1.05)rotateY(30deg);}
+    #paper .seg:nth-child(4){left: 525px;
+     transform:scale(1.05)rotateY(-30deg);
+    background-position: -600px 0;}
+    #paper .seg:nth-child(5){left: 700px;
+     transform:scale(1.05)rotateY(30deg);
+    background-position: -800px 0;}
+    #paper .seg:nth-child(3) .sh{width:200px;
+    height:600px;
+    /*background-color: white*/
+    background-image: linear-gradient(-90deg, #0008, #0000);}
+     #paper .seg:nth-child(4) .sh{width:200px;
+    height:600px;
+    background-image: linear-gradient(-90deg,#0000 , #0008);}
+    #paper .seg:nth-child(5) .sh{width:200px;
+    height:600px;
+    background-image: linear-gradient(90deg,#0000 , #0008);}
+</style>
+</head>
+<body>
+    <div id="paper">
+        <div class="seg"></div>
+        <div class="seg"></div>
+        <div class="seg"><div class="sh"></div></div>
+        <div class="seg"><div class="sh"></div></div>
+        <div class="seg"><div class="sh"></div></div>
+    </div>
+</body>
+</html>
