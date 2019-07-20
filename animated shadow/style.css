@@ -1,0 +1,31 @@
+body{
+background-image: radial-gradient(purple 20%, pink 80%);
+background-size: 50px 50px;
+}
+header{
+width: 750px;
+height: 400px;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+position: absolute;
+text-shadow: 10px 10px 2px #222d;
+z-index: 1}
+.light{width: 2000px;
+height: 2000px;
+background-image: radial-gradient(at left, white, transparent, #2228);
+background-size: 2000px 2000px;
+position: absolute;
+top: -1000px;
+left: 0;
+animation: slide 5s infinite;
+animation-direction: alternate;
+animation: shadow 5s infinite;
+animation-direction: alternate}
+@keyframes slide{from{top:-1000px}
+to{top:0}}
+@keyframes shadow{from{text-shadow: 10px 10px 2px #222d;}
+to{text-shadow: 10px -10px 2px #222d;}
+

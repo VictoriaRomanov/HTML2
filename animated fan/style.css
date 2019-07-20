@@ -1,0 +1,64 @@
+body{background-image: radial-gradient(#333 50%,#222 55%, #777 52%);
+height: 100vh;
+background-size: 25px 25px}
+
+
+#box{width: 400px;
+height: 400px;
+/**background-color: rgb(243, 243, 157);**/
+
+background-image: radial-gradient(transparent 68%, rgb(26, 24, 24) 70%);
+position: absolute;
+/*centrat absolut*/
+border-radius: 1000px}
+#box ul{/**background-color: rgb(202, 147, 29);*/
+position: absolute;
+width: 380px;
+height: 380px;
+border-radius: 1000px;
+}
+#box li{position: absolute;
+transform-origin: 190px 50%;
+border-radius: 100% 100% 0 0}
+#box li:last-child{background-image: radial-gradient(rgb(14, 7, 7), rgb(131, 126, 126));
+width: 80px;
+height: 80px;
+border-radius: 1000px}
+
+.center{top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;}
+#box li:last-child i{position: absolute;
+width: 20px;
+height: 20px;
+color:bisque}
+#box li:not(.center){background-image: radial-gradient(at bottom, transparent 40%, #999 41%, #555);
+    background-size: 200px;
+width: 150px;
+height: 60px;
+top: 160px;}
+#box li:nth-child(1){transform: rotate(0deg);
+}
+#box li:nth-child(2){transform: rotate(60deg);}
+#box li:nth-child(3){transform: rotate(120deg)}
+#box li:nth-child(4){transform: rotate(180deg)}
+#box li:nth-child(5){transform: rotate(240deg)}
+#box li:nth-child(6){transform: rotate(300deg)}
+
+@keyframes rotate-fan{
+    from{ transform: rotate(0)
+
+    }
+    to{
+transform: rotate(360deg)
+    }
+}
+#box ul{animation: rotate-fan 5s linear infinite;}
+
+
+
+/** animatie CSS
+cadrele animatiei
+@keyframes**/
