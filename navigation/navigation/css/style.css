@@ -29,12 +29,19 @@ margin-left: 12px}
 
 
 /**Adaptam anumite aspecte**/
-
 @media (max-width:709px){ #navbar ul:nth-child(2) li:not(:first-child){display: none}
 #navbar ul:nth-child(2) li:first-child{display: contents;
-}
+ margin-top: 0px}
 #navbar ul:first-child{margin-right: 0;}
 #navbar ul:nth-child(2) li:first-child:hover~li{display: block;
-position: absolute}}
+position: absolute;}
+#navbar ul:nth-child(2) li:nth-child(2){top: 50px}
+#navbar ul:nth-child(2) li:nth-child(3){top: 75px}
+#navbar ul:nth-child(2) li:nth-child(4){top: 100px}
+#navbar ul:nth-child(2) li:nth-child(5){top:125px}
+#navbar ul:nth-child(2) li:nth-child(6){top: 150px}
+
+}
+
 
 
