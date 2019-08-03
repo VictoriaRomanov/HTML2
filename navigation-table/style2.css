@@ -1,0 +1,106 @@
+body{font-family: 'Orbitron', sans-serif;
+background-image: radial-gradient(#000714 50%,rgb(5, 58, 68),rgb(6, 72, 77));
+background-size: 10px 10px;
+}
+body::before{background-image: linear-gradient(to right, #0008, #fff8);
+height: 100vh;
+width:100vw;
+content: "";
+position: absolute;
+display: block}
+.colors{
+    color:#00F2F1;
+    color:#006A72;
+    color:#005F71;
+    color:#000714;
+    color:#000714}
+
+#navbar .brand{background-color: #000714;
+    width: calc(1.8*30vh);
+    height: 30vh;
+    top: 17vh;
+    left:5vh;
+    position:relative;
+    box-sizing: border-box;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+animation: flickborder 1s;
+animation-delay: 3s;
+animation-fill-mode: forwards
+}
+#navbar .brand::before{display: block;
+    box-sizing: border-box;
+    content: "";
+    background-color: #000714;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(60deg);
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+animation: flickborder 1s;
+animation-delay: 3.5s;
+animation-fill-mode: forwards}
+#navbar .brand::after{display: block;
+    content: "";
+    box-sizing: border-box;
+    background-color: inherit;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    top: 0;
+animation: flickborder 1s;
+animation-delay: 4s;
+animation-fill-mode: forwards}
+    #navbar .brand a{display: block;
+        position: absolute;
+        z-index: 100;
+        /**top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin:auto;**/
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 30vh;
+        text-decoration: none;
+        color: #006A72;
+        font-size: 1.4em
+    }
+    #navbar .brand img{position: relative;
+    top: 48px;
+}
+    #navbar .brand span{font-weight: 900}
+    #navbar .brand h3{top:60px;
+        display: block;
+        position: absolute;
+        z-index: 100;
+        /**top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin:auto;**/
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 30vh;
+        text-decoration: none;
+        color: #006A72;
+        font-size: 1.
+    }
+    
+    
+    @keyframes flickborder {
+        0%{border-color: transparent}
+        5%{border-color: #006A72,#00F2F1}
+        10%{border-color: transparent}
+        15%{border-color: #00F2F1}
+        20%{border-color: transparent}
+        25%{border-color: #00F2F1}
+        100%{border-color: #00F2F1}
+
+    }
