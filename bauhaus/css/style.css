@@ -1,0 +1,73 @@
+body{font-family: 'Poppins', sans-serif;}
+#carousel{background-image: url(../images/slide1lg.jpg);
+background-size:cover ;
+position: absolute;
+width: 100vw;
+height: 100vh;
+background-position: center}
+
+/* Adaptam background-ul*/
+
+@media (max-width:1000px){
+     #carousel{background-image: url(../images/slide1md.jpg);}}
+@media (max-width:600px){
+     #carousel{background-image: url(../images/slide1ll.jpg);}}
+
+#carousel .slides{width: 80%;
+background-color: #3338;
+position: absolute;
+padding-left: 3em;
+top: 15%;
+bottom: 15%;
+left: 0;
+right: 0;
+margin: auto}
+
+#carousel .btl::after{content: "";
+width: 70px;
+height: 3px;
+display: block;
+position: absolute;
+bottom: 0;
+left: 0;
+background-color: #cee002}
+#carousel .slides .slide h2{font-size: 4em;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 0.9em;
+    transform: scaleX(1.2);
+    transform-origin: left;
+    letter-spacing: -0.1em;
+    position: relative;
+    top: 3em
+}
+#carousel .slides .slide p{position: relative;
+top: -4em;
+}
+#carousel .slides .slide .active{color: #cee002}
+#carousel .slide.dark {color: rgb(255, 251, 251);
+}
+
+.control{position: absolute;
+right: 4%;
+width: 2%;
+top: 45%;
+bottom: 45%;
+font-size: 1em;
+}
+.control ul a{color: #fff;}
+.control ul li{padding-bottom: 1em}
+.control ul li:nth-child(2) a{color: #cee002}
+@media(max-width:800px){
+    #carousel .control{display: none}
+}
+@media(max-width:515px){
+    #carousel .slides .slide h2{font-size: 3em}}
+
+    @media(max-height:520px){
+    #carousel .slides .slide p{display: none;
+    }
+    #carousel .slides .slide h2{top: 1em}
+    #carousel .control ul li:first-child{display: none}
+    #carousel .control ul li:last-child{display: none}
+    }
