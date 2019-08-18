@@ -1,0 +1,46 @@
+Bootstrap 4(css framework)
+
+    foundation, materialize, semantic ui... 
+
+            Scopuri
+    -rapid development/rapid prototyping
+    -universal (navbar, menu, grid, carousel...)
+    -vast community(1000 developers)
+        *experience
+        *adaptive/responsive
+        *crossbrowser
+        *javascript (ready to go)
+        *popularity --->tutorials, docs, bugs, support
+        *documentation
+        
+
+    https://getbootstrap.com/
+    https://www.w3schools.com/bootstrap4/
+    https://bootstrap-4.ru/
+    https://bootsnipp.com/
+    https://stackoverflow.com/
+    https://www.w3schools.com/bootstrap4/bootstrap_modal.asp
+
+
+    (can be configured with scss)
+
+
+
+    KeyPoints
+
+    -parent>child
+    -class names (rules)
+    -id value
+    -href value
+    -data-xxxxxxxx
+
+    <--------- grid bootstrap ---------->(12 cols virtual)
+
+
+    adaptive suffixes
+    xs
+    sm
+    md
+    lg 
+    xl
+
